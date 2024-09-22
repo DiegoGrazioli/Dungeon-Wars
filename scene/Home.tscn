@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=3 uid="uid://dvyynwjolei40"]
+
+[ext_resource type="Script" path="res://home.gd" id="1_djjym"]
+[ext_resource type="Texture2D" uid="uid://me3an3ojtolw" path="res://src/img/border/Custom Border and Panels Menu All Part/Border All 1.png" id="1_pkl6v"]
+[ext_resource type="FontFile" uid="uid://cr07svwrtfyey" path="res://src/fonts/vertopal.com_VGA850.ttf" id="2_f2cub"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ynne5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ddsw"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hr46m"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_djjym")
+
+[node name="Container" type="NinePatchRect" parent="."]
+layout_mode = 2
+anchor_top = -0.0740741
+anchor_right = 0.333333
+anchor_bottom = 0.00308642
+offset_left = 384.0
+offset_top = 302.0
+offset_right = 384.0
+offset_bottom = 302.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+texture = ExtResource("1_pkl6v")
+region_rect = Rect2(1, 65, 62, 62)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+metadata/_edit_use_anchors_ = true
+
+[node name="Gioca" type="Button" parent="Container"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("2_f2cub")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxFlat_ynne5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2ddsw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hr46m")
+text = "Gioca"
+metadata/_edit_use_anchors_ = true
+
+[node name="Container2" type="NinePatchRect" parent="."]
+layout_mode = 2
+anchor_top = -0.0740741
+anchor_right = 0.305556
+anchor_bottom = -0.0462963
+offset_left = 384.0
+offset_top = 366.0
+offset_right = 416.0
+offset_bottom = 398.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_pkl6v")
+region_rect = Rect2(1, 65, 62, 62)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+metadata/_edit_use_anchors_ = true
+
+[node name="Esci" type="Button" parent="Container2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("2_f2cub")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxFlat_ynne5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2ddsw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hr46m")
+text = "Esci"
+
+[connection signal="pressed" from="Container/Gioca" to="." method="_on_gioca_pressed"]
+[connection signal="pressed" from="Container2/Esci" to="." method="_on_esci_pressed"]

@@ -1,0 +1,204 @@
+[gd_scene load_steps=8 format=3 uid="uid://qwag086x5d7j"]
+
+[ext_resource type="Script" path="res://scene/lobby.gd" id="1_8jn7o"]
+[ext_resource type="Texture2D" uid="uid://me3an3ojtolw" path="res://src/img/border/Custom Border and Panels Menu All Part/Border All 1.png" id="2_jj0u2"]
+[ext_resource type="FontFile" uid="uid://cr07svwrtfyey" path="res://src/fonts/vertopal.com_VGA850.ttf" id="3_4b4d8"]
+[ext_resource type="Texture2D" uid="uid://dfj3mht1ybilm" path="res://src/img/border/Custom Border and Panels Menu All Part/Border All 10.png" id="4_56rnw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ynne5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ddsw"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hr46m"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8jn7o")
+
+[node name="Container" type="NinePatchRect" parent="."]
+layout_mode = 2
+anchor_top = -0.17284
+anchor_right = 0.333333
+anchor_bottom = -0.095679
+offset_left = 384.0
+offset_top = 302.0
+offset_right = 384.0
+offset_bottom = 302.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_jj0u2")
+region_rect = Rect2(1, 65, 62, 62)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+metadata/_edit_use_anchors_ = true
+
+[node name="Create" type="Button" parent="Container"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("3_4b4d8")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxFlat_ynne5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2ddsw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hr46m")
+text = "Crea partita"
+
+[node name="Container2" type="NinePatchRect" parent="."]
+layout_mode = 2
+anchor_top = -0.17284
+anchor_right = 0.305556
+anchor_bottom = -0.0709877
+offset_left = 384.0
+offset_top = 366.0
+offset_right = 416.0
+offset_bottom = 398.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_jj0u2")
+region_rect = Rect2(1, 65, 62, 62)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+metadata/_edit_use_anchors_ = true
+
+[node name="Join" type="Button" parent="Container2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("3_4b4d8")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxFlat_ynne5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2ddsw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hr46m")
+text = "Unisciti ad una partita"
+autowrap_mode = 2
+
+[node name="Container3" type="NinePatchRect" parent="."]
+layout_mode = 2
+anchor_right = 0.305556
+anchor_bottom = 0.0277778
+offset_left = 384.0
+offset_top = 366.0
+offset_right = 416.0
+offset_bottom = 398.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_jj0u2")
+region_rect = Rect2(1, 65, 62, 62)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+metadata/_edit_use_anchors_ = true
+
+[node name="Inizia partita" type="Button" parent="Container3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("3_4b4d8")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxFlat_ynne5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2ddsw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hr46m")
+text = "Inizia partita"
+autowrap_mode = 2
+
+[node name="Container4" type="NinePatchRect" parent="."]
+layout_mode = 2
+anchor_top = 0.0987654
+anchor_right = 0.305556
+anchor_bottom = 0.126543
+offset_left = 384.0
+offset_top = 366.0
+offset_right = 416.0
+offset_bottom = 398.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_jj0u2")
+region_rect = Rect2(1, 65, 62, 62)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+metadata/_edit_use_anchors_ = true
+
+[node name="Exit" type="Button" parent="Container4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("3_4b4d8")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxFlat_ynne5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2ddsw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hr46m")
+text = "Esci"
+autowrap_mode = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 128.0
+offset_right = 768.0
+offset_bottom = 168.0
+texture = ExtResource("4_56rnw")
+region_rect = Rect2(65, 1, 62, 62)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="LineEdit" type="LineEdit" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 378.0
+offset_bottom = 34.0
+theme_override_fonts/font = ExtResource("3_4b4d8")
+placeholder_text = "Datti un nome..."
+
+[connection signal="pressed" from="Container/Create" to="." method="_on_create_pressed"]
+[connection signal="pressed" from="Container2/Join" to="." method="_on_join_pressed"]
+[connection signal="pressed" from="Container3/Inizia partita" to="." method="_on_inizia_partita_pressed"]
+[connection signal="pressed" from="Container4/Exit" to="." method="_on_exit_pressed"]
